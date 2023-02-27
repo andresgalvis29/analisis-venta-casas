@@ -16,8 +16,9 @@ def dataOrganize(file):
     for getlist in filterdata:
         prom = int(sum(filterdata[getlist])/len(filterdata[getlist]))
         filterdata[getlist] = prom
-    return filterdata
+    return dict(filterdata)
 
 
 if __name__ == '__main__':
-    dataOrganize()
+    x = dataOrganize('casas_pereira.csv')
+    print(x)

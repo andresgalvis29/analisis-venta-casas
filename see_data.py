@@ -15,9 +15,9 @@ def run():
 
     #plot 
     fig,ax = plt.subplots()
-    p = ax.barh(location,prom,height=0.5)
+    bars = ax.barh(location,prom,height=0.5)
     ax.set(ylim=(0,10))
-    ax.bar_label(p)
+    ax.bar_label(bars,labels=[f'${x:,.1f}' for x in bars.datavalues])
     plt.show()
     
 
