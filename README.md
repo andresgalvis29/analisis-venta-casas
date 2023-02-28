@@ -1,10 +1,10 @@
 # Analisis de venta de casas
 Programa de python que permite ver el promedio de precios de inmobiliarios en cualquier ciudad del mundo.
 
-###Requisitos:
+### Requisitos:
 - Tener un .csv el cual tenga como columnas** location** y **price** 
 
-###Instrucciones:
+### Instrucciones:
 * Clonamos el proyecto a nuestro entorno local 
 `git clone https://github.com/andresgalvis29/analisis-venta-casas.git`
 * Instalamos los paquetes necesarios para que nuestro programa funcione 
