@@ -1,19 +1,14 @@
 from organize_data import dataOrganize
 import time
 import matplotlib.pyplot as plt
-#import pandas as pd
 
-def run():
-    dictData=dataOrganize('casas_pereira.csv')
+def seeData(file):
+    dictData=dataOrganize(file)
     count = 0
     location = list(dictData.keys())
     prom = list(dictData.values())
-    #print(dictData)
-    #pandasserie = pd.Series(dictData)
-    #print(pandasserie)
-    #pandasserie.plot(kind='barh', sort_columns=True, legend=True)
 
-    #plot 
+    #Graficamos nuestro diccionario
     fig,ax = plt.subplots()
     bars = ax.barh(location,prom,height=0.5)
     ax.set(ylim=(0,10))
@@ -22,4 +17,4 @@ def run():
     
 
 if __name__ == '__main__':
-    run()
+    seeData('casas_pereira.csv')
